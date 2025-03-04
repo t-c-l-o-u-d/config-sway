@@ -52,6 +52,8 @@ for_window {
   [app_id="firefox"] inhibit_idle fullscreen
   [app_id="mpv"] inhibit_idle fullscreen
   [app_id="code"] move container to workspace number 1
+  [app_id="firefox"] move container to workspace number 2
+  [app_id="signal"] move container to workspace number 3
   #[app_id="firefox" title="Extension.*Bitwarden\ Password\ Manager.*"] floating enable, focus floating
 }
 
@@ -128,8 +130,6 @@ exec swayidle -w \
 #
     # Set default workspace layout to tabbed
     workspace_layout tabbed
-
-    rename workspace 1 to code
 
     # Switch to workspace
     bindsym $mod+1 workspace number 1
