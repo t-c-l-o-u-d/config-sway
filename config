@@ -20,6 +20,7 @@ set $menu bemenu-run \
 #=====================
 # Output configuration
 #=====================
+# swaymsg -t get_outputs 
 # all outputs
 output * {
   background #000000 solid_color
@@ -28,6 +29,7 @@ output * {
 # desktop
 output 'LG Electronics LG UltraFine 203NTRLHT702' {
   scale 2
+  disable
 }
 output 'LG Electronics LG UltraFine 203NTUWHT718' {
   scale 2
